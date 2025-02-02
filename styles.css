@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Cookie-behållare {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%; 
+    max-width: 700px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    margin-bottom: 20px;
+    width: 100%; 
+}
+
+.Flagga-behållare {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+    height: 20px;
+}
+
+.Flagga {
+    width: 26px;
+    height: 16px;
+    background-color: #006AA7;
+    position: relative;
+    margin-right: 5px;
+}
+
+.Flagga::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #FECC00;
+    left: 6px;
+}
+
+.Flagga::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #FECC00;
+    top: 6px;
+    right: 0;
+}
+
+span {
+    color: #000000;
+    font-size: 14px;
+}
+
+h1 {
+    color: #f47c20;
+    font-size: 60px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+p {
+    font-size: 20px;
+    color: #3f3272;
+    margin-bottom: 30px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #3f3272;
+    margin-bottom: 5px;
+}
+
+.Punkt {
+    width: 15px;
+    height: 15px;
+    background-color: #f47c20;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+
+.Info-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.Info-text a:hover {
+    color: #0062ca;
+    text-decoration: underline;
+}
+
+
+.Knappar {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.Acceptera-alla {
+    background-color: #f47c20;
+    color: white;
+}
+
+.Acceptera-alla:hover {
+    background-color: #e86918;
+}
+
+.Endast-nödvändiga {
+    background-color: #f47c20;
+    color: white;
+}
+
+.Endast-nödvändiga:hover {
+    background-color: #e86918;
+}
+
+.Inställningar {
+    background-color: #00a69c;
+    color: white;
+}
+
+.Inställningar:hover {
+    background-color: #008b84;
+}
