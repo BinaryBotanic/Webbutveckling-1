@@ -1,0 +1,112 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1558478551-1a378f63328e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #f7d0ea;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu li {
+    position: relative; /* För att positionera underkategorier i förhållande till huvudmenyalternativet */
+    margin-right: 20px;
+}
+
+ul.menu li:last-child {
+    margin-right: 0;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 15px;
+    display: block;
+}
+
+ul.menu li a:hover {
+    background-color: #c797b7;
+    border-radius: 5px;
+}
+
+ul.submenu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    z-index: 1000;
+    width: 200px;
+}
+
+ul.submenu li {
+    border-bottom: 1px solid #555;
+}
+
+ul.submenu li:last-child {
+    border-bottom: none;
+}
+
+ul.submenu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+ul.submenu li a:hover {
+    background-color: #c797b7;
+}
+
+/* Visa underkategorier vid hovring */
+.menu-item:hover .submenu {
+    display: block;
+}
+
+/* Innehåll på startsidan */
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.welcome-container {
+    text-align: center;
+    background-color: #f7d0ea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 40px;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+p {
+    font-size: 18px;
+    color: #ffffff;
+}

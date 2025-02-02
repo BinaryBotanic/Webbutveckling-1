@@ -1,0 +1,25 @@
+/* Bakgrundsfärg för hela sidan */
+body {
+    background-color: #d3d3d3; /* Ljusgrå */
+    font-family: Verdana, sans-serif;
+}
+
+/* Stil för den första rubriken (Rubrik 1) */
+h1 {
+    font-family: Arial, sans-serif;
+    color: darkgreen;
+    font-size: 25px;
+}
+
+/* Stil för den andra rubriken (Rubrik 2) */
+h2 {
+    font-family: Arial, sans-serif;
+    color: yellow;
+    font-size: 20px;
+}
+
+/* Stil för paragrafer */
+p {
+    color: red;
+    font-size: 12px;
+}

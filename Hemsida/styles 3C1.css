@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    
+}
+
+.box {
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    display: flex;
+    padding: 20px;
+    justify-content: left;
+    align-items: center;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    border: 7px solid rgb(175, 175, 175);
+}
+
+.box1 {
+    background-color: #ffee00; /* Blå */
+    color: rgb(0, 60, 255);
+    top: 200px;
+    left: 20px;
+}
+
+.box2 {
+    background-color: #0ee3ff; /* Röd */
+    color: rgb(255, 0, 0);
+    top: 100px;
+    left: 200px;
+}
+
+.box3 {
+    background-color: #0f8500; /* Grön */
+    color: rgb(0, 0, 0);
+    top: 180px;
+    left: 140px;
+}
