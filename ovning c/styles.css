@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif; /* Anger typsnittet för hela sidan */
+    margin: 0; /* Tar bort standardmarginaler från body */
+    padding: 0; /* Tar bort standardpadding från body */
+    display: flex; /* Använder Flexbox för att centrera innehållet */
+    flex-direction: column; /* Arrangerar innehållet vertikalt */
+    align-items: center; /* Centrera alla barn i body horisontellt */
+}
+
+header {
+    display: flex; /* Använder Flexbox för att centrera bilderna horisontellt */
+    justify-content: center; /* Centrera bilderna horisontellt i header */
+    margin: 20px 0; /* Marginal ovanför och under header för att skapa utrymme */
+}
+
+header .fågel-item {
+    display: flex; /* Använder Flexbox för att arrangera bilderna i rad */
+    gap: 20px; /* Avstånd mellan bilderna */
+}
+
+h1, h2 {
+    font-size: 30px; /* Storlek på texten för rubrikerna */
+    color: red; /* Färg på texten för rubrikerna */
+    margin: 10px 0; /* Marginal ovanför och under rubrikerna */
+    padding: 10px; /* Padding inuti rubrikerna */
+    border-top: 2px solid red; /* Överliggande kantlinje för rubrikerna */
+    border-bottom: 2px solid red; /* Undre kantlinje för rubrikerna */
+    width: 100%; /* Gör att rubrikerna sträcker sig över hela bredden av sin behållare */
+    text-align: center; /* Centrerar texten i rubrikerna */
+    box-sizing: border-box; /* Inkluderar padding och border i elementets totala bredd */
+
+}
+
+h2 {
+    color: rgb(0, 0, 0); /* Färg på texten för h2 */
+    border-top: 2px solid rgb(0, 0, 0); /* Överliggande kantlinje för h2 */
+    border-bottom: 2px solid rgb(0, 0, 0); /* Undre kantlinje för h2 */
+}
+
+.fåglar-grid {
+    display: grid; /* Använder CSS Grid för att arrangera fågel-item i rader och kolumner */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Skapar kolumner som anpassar sig efter skärmstorleken */
+    justify-content: center; /* Centrera hela grid-layouten horisontellt */
+    margin: 20px 0; /* Marginal ovanför och under grid-layouten */
+    width: 50%; /* Sätter bredden på grid-layouten till 50% av behållarens bredd */
+}
+
+.fågel-item {
+    display: flex; /* Använder Flexbox för att arrangera bild och beskrivning i kolumn */
+    flex-direction: column; /* Arrangerar barnen (bild och beskrivning) i en kolumn */
+    align-items: center; /* Centrera barnen (bild och beskrivning) horisontellt */
+    text-align: center; /* Centrerar texten inom beskrivningen */
+    gap: 10px; /* Minskar avståndet mellan .beskrivning-elementen */
+}
+
+.bild1 {
+    width: 150px; /* Bredd på bilderna med klass bild1 */
+    margin-right: 115px; /* Höger marginal för bilder med klass bild1 */
+    box-shadow: 10px 20px 0 rgb(0, 0, 0); /* Skugga runt bilderna */
+}
+
+.bild1:last-of-type {
+    margin-right: 0; /* Tar bort höger marginal för sista bilden med klass bild1 */
+    opacity: 0.6;
+}
+
+.bild2 {
+    width: 150px; /* Bredd på bilderna med klass bild2 */
+    position: center; /* Gör att pseudo-elementet kan placeras relativt till h3 */
+    box-shadow: 10px 20px 0 rgb(0, 0, 0); /* Skugga runt bilderna */
+    opacity: 0.6;
+}
+
+.beskrivning {
+    width: 300px; /* Bredd på beskrivningsrutan */
+    padding: 5px; /* Padding inuti beskrivningen */
+    box-sizing: border-box; /* Inkluderar padding och border i elementets totala bredd */
+    box-shadow: 10px 20px 0 rgb(0, 0, 0); /* Skugga runt beskrivningen */
+    margin-top: 30px;
+}
+
+.beskrivning2 {
+    width: 450px; /* Bredd på beskrivningsrutan */
+    background-color: #fff; /* Bakgrundsfärg för beskrivningen */
+    padding: 5px; /* Padding inuti beskrivningen */
+    box-sizing: border-box; /* Inkluderar padding och border i elementets totala bredd */
+    box-shadow: 10px 20px 0 rgb(0, 0, 0); /* Skugga runt beskrivningen */
+    margin-top: 30px;
+}
+
+h3 {
+    position: center; /* Gör att pseudo-elementet kan placeras relativt till h3 */
+    color: #000000; /* Textfärg */
+    padding: 10px; /* Padding för att ge utrymme runt texten */
+    background-color: #ff9d9d; /* Bakgrundsfärg för h3 */
+    border-radius: 50%; /* Gör formen oval */
+    display: inline-block; /* Gör att elementet anpassar sig till textens storlek */
+    text-align: center; /* Centrera texten horisontellt */
+    box-shadow: 0 0 0 5px rgba(255, 0, 0, 0.6); /* Fejad röd kant */
+    width: 270px;
+}
+
+
+h3::first-letter {
+    color: yellow; /* Gult färg för första bokstaven */
+    font-size: 200%; /* Gör den första bokstaven större */
+    font-weight: bold; /* Gör första bokstaven fetare (kan justeras efter behov) */
+}
+
+h4 {
+    position: center; /* Gör att pseudo-elementet kan placeras relativt till h3 */
+    color: #000000; /* Textfärg */
+    padding: 20px; /* Padding för att ge utrymme runt texten */
+    background-color: #ff9d9d; /* Bakgrundsfärg för h3 */
+    border-radius: 50%; /* Gör formen oval */
+    display: inline-block; /* Gör att elementet anpassar sig till textens storlek */
+    text-align: center; /* Centrera texten horisontellt */
+    box-shadow: 0 0 0 5px rgba(255, 0, 0, 0.6); /* Fejad röd kant */
+    width: 400px; /* Ändrar brädd på figur*/
+}
+
+
+p {
+    font-size: 15px;
+    color: black;
+}
+
+.Stor-bokstav {
+    color: #000000; /* Färg på texten i .p2 */
+}
+
+.Stor-bokstav::first-letter {
+    color: #000000; /* Svart färg för första bokstaven */
+    font-size: 200%; /* Gör den första bokstaven större */
+    font-weight: bold; /* Gör första bokstaven fetare */
+}
+
+.ett {
+    background-color: white;
+    opacity: 0.8;
+}
+
+.två {
+    background-color: white;
+    opacity: 0.8;
+}
+
+.tre {
+    background-color: white;
+    opacity: 0.8;
+}
+
+.fyra {
+    background-color: white;
+    opacity: 0.8;
+}
+
+.fem {
+    background-color: white;
+    opacity: 0.8;
+}
+
+html {
+    background: url(https://i.postimg.cc/8CHgbX6D/havskust.avif) no-repeat center fixed;
+    background-size: cover;
+  }
